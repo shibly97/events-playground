@@ -1,0 +1,26 @@
+{
+    "name": "clicksend/events-playground",
+    "description": "Local playground that installs clicksend/clicksend like a real service and publishes events to LocalStack Kinesis. Not for production.",
+    "type": "project",
+    "require": {
+        "php": "^8.4",
+        "clicksend/clicksend": "*@dev"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../ClickSend",
+            "options": { "symlink": true }
+        },
+        {
+            "type": "path",
+            "url": "../clicksend-event-schemas",
+            "options": {
+                "symlink": true,
+                "versions": { "clicksend/event-schemas": "0.0.15" }
+            }
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

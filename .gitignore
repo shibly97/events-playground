@@ -1,0 +1,7 @@
+# Composer libraries, rebuilt with `composer install`
+/vendor/
+
+# Local settings for start-aws.sh (copy .env.example)
+.env
+
+.DS_Store
